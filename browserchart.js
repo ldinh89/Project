@@ -31,7 +31,7 @@
     var chartGroup = svg;
 
     // Parse the Data
-    d3.csv("New_data_csv/cleaned_data.csv").then(function(browserdata) {
+    d3.csv("cleaned_data.csv").then(function(browserdata) {
 
       // X axis
       x.domain(browserdata.map(function(d) { return d.Browser_Name; }))
